@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AcadrePWS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AcadrePWS_AcadreServiceV7_AcadreServiceV7" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://esdhtest2/acadre/Acadre.CM.PublicServices.SoapAuth/AcadreServiceV7.asmx</Value>
+    </Setting>
+    <Setting Name="AcadreFrontEndBaseURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://esdhwebtest2:8083/Frontend/CM</Value>
+    </Setting>
+    <Setting Name="PWSServiceUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">esdhtest3</Value>
+    </Setting>
+    <Setting Name="PWSServiceUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">password</Value>
+    </Setting>
+    <Setting Name="PWSServiceUserDomain" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">syddjursnet</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

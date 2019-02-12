@@ -1,0 +1,88 @@
+﻿token,en-US,da-DK
+Search,Search,Søg
+Instances,Cases,Sager
+Tasks,Tasks,Opgaver
+Title,Title,Titel
+Status,Status,Status
+DueDate,Due Date,Deadline
+AddInstance,Add Case,Tilføj sag
+Processes,Processes,Processer
+Add,Add,Tilføj
+Phase,Phase,Fase
+InstanceDetail,Case,Sagsdetaljer
+CaseNo,Case #,Id
+CaseLink,Case Link,Link
+InstanceTasks,Case Tasks,Sagsopgaver
+Responsible,Responsible,Ansvarlig
+NoRecordFound,No Record Found,Ingen rækker fundet
+MUSDetails,MUS Details,MUS Detaljer
+Name,Name,Navn
+Action,Action,Handling
+Description,Description,Beskrivelse
+Home,Home,Hjem
+MUS,MUS,MUS
+History,History,Historik
+EventsId,EventId,Handling
+Edit,Edit,Redigere
+Update,Update,Opdatering
+Cancel,Cancel,Afbestille
+Delete,Delete,Slet
+Open,Open,Åben
+Close,Close,Lukket
+ProcessDeleteMessage,Press OK to delete process.,Tryk på OK for at slette proces.
+Processes,Processes,Processer
+SearchProcess,Search Process,Søg proces
+Welcome,Welcome,Velkommen
+ProcessPhasesUpdatedMessage,DCR Graph XML and its phases are updated.,DCR Graph XML og dets faser opdateres.
+BlankForm,Blank Form,Blank formular
+ChooseFromTemplate,Choose From Template,Vælg fra formular
+ShowMyForms,Show My Forms,Vis mine formularer
+IsTemplate,Is Template,Er skabelon
+NewItem,New Item,Nyt objekt
+FormTemplates,Form Templates,Formular skabelon
+MyForms,My Forms,Mine formularer
+Form,Form,Formular
+FormFromTemplate,Do you want to create form from selected template?,Vil du oprette formular fra valgt skabelon?
+Download,Download,Hent
+ExportAsPDF,Export As PDF,Eksporter som PDF
+NoGraphFound,No Graph Found.,Ingen graf fundet.
+NoUserDetails,No User Details,Ingen detaljer om bruger
+ProcessAdded,Process added,Proces tilføjet
+ProcessesAdded,Processes added,Processer tilføjet
+ProcessAlreadyAdded,Process already added,Processen er allerede tilføjet
+Yes,Yes,Ja
+No,No,Nej
+SelectResponsible,Select Responsible,Vælg Ansvarlig
+InstanceCreateError,Something is missing to create instance,Der mangler noget for at skabe forekomst
+CreateTemplate,Create Template,Opret skabelon
+AllResponsibles,All Responsibles,Alle Ansvarlige
+Default,Default,Default
+OnlyEnabled,Only Enabled,Kun Aktive
+MyTasks,My Tasks,Mine Opgaver
+GotoGraph,Go to graph,Gå til graph
+OnFrontPage,On Front Page,På forsiden
+On,on,tænde
+Off,off,af
+Create,Create,Opret
+Documents,Documents,Dokumenter
+DeleteDocument,Delete Document,Slet Dokument
+DeleteDocumentMessage,Document will no longer be available after delete.<br/>Do you want to continue?,Dokumentet vil ikke være tilgængeligt når det er slettet?<br/>Vil du fortsætte?
+DragorSelect,Drag a file or Select Here,Træk en fil eller vælg her
+Document,Document,Dokument
+AddDocument,Add Document,Tilføj Dokument
+EditDocument,Edit Document,Rediger Dokument
+Actions,Actions,Handlinger
+Department,Department,Afdeling
+Instructions,Instructions,Instruktioner
+GraphId,Graph Id,Graf Id
+Export,Export,Eksport
+Select,Select,Vælg
+SaveToPersonalFolder,To Personal Folder,Til Personlig Mappe
+UploadedToPersonalFolder,Document uploaded to Personal folder.,Dokument uploadet til Personlig mappe.
+Comment,Comment,Kommentar
+Execute,Execute,Udfør
+PersonalDocument,Personal Documents,Personlige Dokumenter
+DownloadAsPDF,Download as pdf,Download som pdf
+DownloadAsWord,Download as word,Download som word
+SavePDFToPersonalFolder,PDF To Personal Folder,PDF Til Personlig Mappe
+SaveWordToPersonalFolder,Word To Personal Folder,Word Til Personlig Mappe

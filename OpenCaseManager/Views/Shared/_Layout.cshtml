@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/FontAwsome/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    @Scripts.Render("~/bundles/jquery")
+
+    <div class="wrapper">
+        <header>
+            <div class="container inner-block">
+                <div class="main-menu-top">
+                    <div class="container">
+                        <ul class="menu-header-ul">
+                            <li><a href="#" style="text-decoration: none;cursor:pointer"><span data-locale data-apply="text" data-key="Welcome">Welcome</span> <span id="userName"></span></a></li>
+                            <li><a href="~/mus"><span data-locale data-apply="text" data-key="MUS">MUS</span></a></li>
+                            <li><a href="~/Admin/Processes/"><span data-locale data-apply="text" data-key="Processes">Processes</span></a></li>
+                            <li><a href="~/Admin/SearchProcess/"><span data-locale data-apply="text" data-key="SearchProcess">Search Process</span></a></li>
+                            <li><a href="~/Form/"><span data-locale data-apply="text" data-key="Form">Form</span></a></li>
+                            <li><a href="~/"><span data-locale data-apply="text" data-key="Home">Home</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-header clearfix">
+                    <div class="pull-left">
+                        <a href="../">
+                        </a>
+                    </div>
+                    <div class="search-field col-md-6 pull-right">
+                        <input type="text" placeholder="Search.." data-locale data-apply="attribute" data-attribute="placeholder" data-key="Search" id="searchCase">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container inner-block">
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="confirmModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-hidden="true" class="close" type="button">x</button>
+                                <h4 class="modal-title">Confirm</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p id="confirmMsg"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="pull-right">
+                                    <a href="javascript:void(0)" class="btn btn-default" id="confirmNo" title="Cancel">Cancel</a>
+                                    <a href="javascript:void(0)" class="btn groupedBtnStyling" id="confirmYes" title="Ok">Ok</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: fixed;top: 0;z-index: 10000000;width: 40%;text-align: center;left: 27%;" class="custom-container">
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="addDocumentDialog" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title instanceModalHeading"><span data-locale data-apply="text" data-key="AddDocument">Add Document</span></h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label><span data-locale data-apply="text" data-key="Document">Document</span></label>
+                                    <div id="drop-area-front-page" class="drop-area">
+                                        <form class="my-form">
+                                            <input class="fileElem" type="file" id="fileElemTemp">
+                                            <label class="button" for="fileElemTemp" data-locale data-apply="text" data-key="DragorSelect">Drag a file or Select</label><br />
+                                            <label class="button" for="" id="selectedFileNameTemp" style="font-weight: normal !important;font-style: italic;color: brown;"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal Footer -->
+                            <div class="modal-footer">
+                                <button type="button" id="addDocumentTemp" class="instanceAdd"><span data-locale data-apply="text" data-key="Add">Add</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal End-->
+
+                @RenderBody()
+            </div>
+        </main>
+        <footer>
+            <div class="container inner-block">
+                <div class="footer">
+                    <div class="footer-content clearfix">
+                        <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
+                            <div class="left-footer-img pull-left"></div>
+                        </div>
+                        <span class="col-lg-6 col-md-6 col-sm-6 allrights"></span>
+                        <div class="col-lg-3 col-md-3 col-sm-3 pull-right">
+                            <div class="right-footer-img pull-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- Container End -->
+
+    <script type="text/javascript">
+        // capturing each and every client side Error
+        window.onerror = function (message, source, lineno, colno, error) {
+            var errorDetails = {
+                "message": message,
+                "source": source,
+                "stack": error.stack,
+            }
+
+            if (window.App != null) {
+                App.logJsError(errorDetails);
+            }
+            else {
+                alert(message);
+            }
+        }
+    </script>
+
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/bluebird")
+    @Scripts.Render("~/bundles/moment")
+    <script type="text/javascript">
+        var localeDefs = {
+            'da': 'da-DK',
+            'da-DK': 'da-DK',
+            'en': 'en-US',
+            'en-US': 'en-US',
+            'pt': 'pt-BR',
+            'pt-BR': 'pt-BR',
+            'es': 'es',
+            'es-AR': 'es',
+            'ca': 'ca',
+        };
+
+        var browserLocale = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+        var defaultLocale = 'en-US';
+
+        var locale = (localeDefs[browserLocale] === undefined) ? defaultLocale : localeDefs[browserLocale];
+
+        moment.locale(locale);
+    </script>
+
+    @Scripts.Render("~/bundles/noty")
+    @Scripts.Render("~/bundles/app")
+</body>
+</html>
